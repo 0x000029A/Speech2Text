@@ -1,0 +1,9 @@
+tk
+SpeechRecognition
+arabic-reshaper
+os
+fpdf
+python-bidi
+datetime
+threading
+pydub
