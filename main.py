@@ -161,30 +161,3 @@ Entry(T2S, textvariable=output_filename).grid(column=1, row=5)
 # Start button
 Button(T2S, text="Start", padx=10, pady=5, command=Main0).grid(column=1, row=6)
 T2S.mainloop()
-
-"""from os import path
-AUDIO_FILE_EN = path.join(path.dirname(path.realpath(__file__)), "voice.wav")
-
-r = sr.Recognizer()
-with sr.AudioFile(AUDIO_FILE_EN) as source:
-    audio_en = r.record(source)
-
-keyword_text = r.recognize_sphinx(audio_en, keyword_entries=[("learning", 1.0)])
-print(keyword_text)
-
-keyword_start = "learning "
-
-if keyword_text == keyword_start:
-    with sr.Microphone() as source:
-        print("Say something!")
-        audio = r.listen(source)
-    print(r.recognize_google(audio))
-else:
-    print("Not")
-
-from fpdf import FPDF
-pdf = FPDF()
-pdf.add_page()
-pdf.set_font("Arial", size=15)
-pdf.multi_cell(0, 10, txt=r.recognize_google(audio), align='L')
-pdf.output("S2T.pdf")"""
